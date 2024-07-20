@@ -1,9 +1,9 @@
 .list-container {
   margin: auto;
-  width: 70%;
+  width: 60%;
 }
 .title {
-  font-size: 1.5em;
+  font-size: 1rem;
   font-weight: 900;
   text-align: center;
   margin: 1em;
@@ -15,4 +15,14 @@
   border-radius: 0.3em;
   border: 1px solid rgba(255, 255, 255, 0.491);
   margin: 0.3em;
+  word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+  .list-container {
+    width: 70%;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
 }

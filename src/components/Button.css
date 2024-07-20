@@ -5,7 +5,12 @@ button {
   background-color: rgb(118, 118, 118);
   border: none;
   border-radius: 1em;
-  font-size: 1em;
+  font-size: 0.8rem;
   font-weight: 700;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  button {
+    font-size: 1rem;
+  }
 }

@@ -7,7 +7,11 @@ function App() {
   const [value, setValue] = useState("");
   const [list, setList] = useState([]);
   function addClick() {
-    setList([...list, value]);
+    let polishedValue = value.trim();
+    if (polishedValue) {
+      setList([...list, value]);
+    }
+
     setValue("");
   }
   return (
