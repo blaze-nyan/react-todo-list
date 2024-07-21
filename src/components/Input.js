@@ -1,12 +1,9 @@
 import "./Input.css";
-function Input({ value, setValue }) {
+
+function Input({ valueRef }) {
   return (
     <div className="input">
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
+      <input type="text" ref={valueRef} />
     </div>
   );
 }
